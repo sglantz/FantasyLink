@@ -1,0 +1,19 @@
+{
+  "name": "FantasyGraph for ESPN Fantasy Baseball",
+  "version": "0.1.1",
+  "description": "Adds FanGraphs integration into the ESPN Fantasy baseball clubhouse.",
+  "permissions": [
+    "http://games.espn.go.com/flb/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "46": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://games.espn.go.com/flb/clubhouse*", "http://games.espn.go.com/flb/freeagency*"],
+      "js" : ["jquery-1.7.1.min.js", "contentscript.js"]
+    }
+  ]
+}
