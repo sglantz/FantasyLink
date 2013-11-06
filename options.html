@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>FantasyGraph Options</title>
+    <style type="text/css">
+        body
+        {
+            width: 600px;
+            margin: auto;
+            font-family: 'Noto Sans', 'Segoe UI', 'Lucida Grande', 'Open Sans', arial, sans-serif;
+            font-size: 12px;
+            color: rgb(48, 57, 66);
+        }
+
+        h1
+        {
+            display: inline;
+            line-height: 24px;
+            vertical-align: middle;
+            padding-left: 8px;
+        }
+
+        img
+        {
+            line-height: 24px;
+            vertical-align: middle;
+        }
+
+        header
+        {
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e2e2;
+        }
+
+        .inputContainer
+        {
+            margin: 8px 20px;
+            vertical-align: middle;
+        }
+
+        #status
+        {
+            padding: 8px 14px;
+            margin-left: 50px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            border: 1px solid #d6e9c6;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            background-color: #dff0d8;
+            color: #468847;
+            display: none;
+            width: 250px;
+            text-align: center;
+        }
+
+        button
+        {
+            padding: 5px 14px;
+            text-align: center;
+            display: inline-block;
+            width: 75px;
+            cursor: pointer;
+        }
+
+        input
+        {
+            cursor: pointer;
+        }
+
+            input:disabled
+            {
+                cursor: auto;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="icon48.png" height="48" width="48" alt="FantasyGraph Icon" /><h1>FantasyGraph extension options</h1>
+    </header>
+    <div class="content">
+        <section>
+            <h3>Extension is enabled:</h3>
+            <div class="inputContainer">
+                <input type="checkbox" name="enabled" value="yes">Yes - I downloaded this extension and I want to use it.
+            </div>
+        </section>
+        <section>
+            <h3>Display FantasyGraph icon in the Chrome address bar (omnibox):</h3>
+            <div class="inputContainer">
+                <input type="checkbox" name="toolbar" value="yes">Yes - I love this extension so much that I want a repeated reminder (and quick access to the options).
+            </div>
+        </section>
+        <section>
+            <h3>Sites to use for profile links:</h3>
+            <div class="inputContainer">
+                <input type="checkbox" name="fangraphs" value="yes">FanGraphs
+            </div>
+            <div class="inputContainer">
+                <input type="checkbox" name="baseballreference" value="yes">Baseball Reference
+            </div>
+        </section>
+        <section>
+            <h3>Add profile links to the following sites:</h3>
+            <div class="inputContainer">
+                <input type="checkbox" name="espn" value="yes">ESPN
+            </div>
+            <div class="inputContainer">
+                <input type="checkbox" name="cbs" value="yes">CBS
+            </div>
+        </section>
+        <br>
+        <button id="save">Save</button><span id="status">Your selected options have been saved!</span>
+    </div>
+</body>
+<script src="jquery.min.js"></script>
+<script src="library.js"></script>
+<script src="options.js"></script>
+</html>
