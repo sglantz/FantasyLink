@@ -1,30 +1,30 @@
 {
   "manifest_version": 2,
   "name": "FantasyGraph",
-  "version": "1.5",
+  "version": "1.9.1",
   "description": "Adds FanGraphs and Baseball Reference integration into the ESPN and CBSSports fantasy baseball websites.",
   "permissions": [ "storage", "tabs", "http://games.espn.go.com/flb/*", "http://*.baseball.cbssports.com/*"],
   "icons": {
-    "16": "icon16.png",
-    "46": "icon48.png",
-    "128": "icon128.png"
+    "16": "img/icon16.png",
+    "46": "img/icon48.png",
+    "128": "img/icon128.png"
   },
   "content_scripts": [
     {
       "matches": ["http://games.espn.go.com/flb/clubhouse*", "http://games.espn.go.com/flb/freeagency*", "http://games.espn.go.com/flb/trade*", 
 		"http://*.baseball.cbssports.com/teams*", "http://*.baseball.cbssports.com/stats/stats-main*", "http://*.baseball.cbssports.com/transactions/trade*"],
-      "js" : ["jquery.min.js", "library.js", "contentscript.js"]
+      "js" : ["js/jquery.min.js", "js/library.js", "js/contentscript.js"]
     }
   ],
   "background" : {
-	"scripts": ["library.js", "background.js"]
+	"scripts": ["js/library.js", "js/background.js"]
   },
   "page_action": {    
 	"default_icon": {
-      "19": "icon19.png",
-      "38": "icon38.png"
+      "19": "img/icon19.png",
+      "38": "img/icon38.png"
     },
 	"default_title": "FantasyGraph"
   },
-  "options_page": "options.html"
+  "options_page": "html/options.html"
 }
