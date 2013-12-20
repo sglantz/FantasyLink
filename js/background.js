@@ -5,7 +5,7 @@
         } else {
             chrome.pageAction.setIcon({ tabId: tab.id, path: '/img/icon38.png'});
         }
-        options.enabled = !options.enabled
+        options.enabled = !options.enabled;
         setOptions(function () { });
     });
 });
@@ -22,5 +22,3 @@ chrome.extension.onRequest.addListener(function (request, sender) {
         });
     }
 });
-
-//chrome.tabs.onUpdated.addListener(checkForValidUrl);

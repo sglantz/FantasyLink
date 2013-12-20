@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "FantasyGraph",
-  "version": "1.9.1",
+  "version": “1.9.2”,
   "description": "Adds FanGraphs and Baseball Reference integration into the ESPN and CBSSports fantasy baseball websites.",
   "permissions": [ "storage", "tabs", "http://games.espn.go.com/flb/*", "http://*.baseball.cbssports.com/*"],
   "icons": {

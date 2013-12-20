@@ -13,7 +13,7 @@ var observerConfig = {
 
 $(document).ready(function () {
     getOptions(function (opt) {
-        options = opt
+        options = opt;
         if (options.toolbar) {
             chrome.extension.sendRequest("showPageAction");
         }
@@ -26,7 +26,7 @@ $(document).ready(function () {
 function addSites() {
     if (options.espn && document.URL.indexOf("espn") != -1) {
         addESPNLinks();
-        addESPNResetEvents();
+        addESPNEvents();
     } else if (options.cbs && document.URL.indexOf("cbssports") != -1) {
         addCBSLinks();
         addCBSEvents();
@@ -40,15 +40,15 @@ function addESPNLinks() {
     });
 }
 
-function addESPNResetEvents() {
+function addESPNEvents() {
     var target = document.querySelector('.playerTableContainerDiv');
 
     var observerESPN = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-            observerESPN.disconnect();
+        observerESPN.disconnect();
+        if (mutations.length > 0) {
             addESPNLinks();
-            observerESPN.observe(target, observerConfig);
-        });
+        }
+        observerESPN.observe(target, observerConfig);
     });
     observerESPN.observe(target, observerConfig);
 }
@@ -58,7 +58,7 @@ function addCBSLinks() {
     $('a.playerLink').each(function () {
         if ($(this).parent().is('td')) {
             var splitIndex = $(this).text().indexOf(', ');
-            var originalName = $(this).text()
+            var originalName = $(this).text();
             $(this).parent().append(getLinks(originalName.substring(splitIndex + 2, originalName.length) + ' ' +
                 originalName.substring(0, splitIndex)));
         }
@@ -69,11 +69,11 @@ function addCBSEvents() {
     var target = document.querySelector('#pageContainer');
 
     var observerCBS = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-            observerCBS.disconnect();
+        observerCBS.disconnect();
+        if (mutations.length > 0) {
             addCBSLinks();
-            observerCBS.observe(target, observerConfig);
-        });
+        }
+        observerCBS.observe(target, observerConfig);
     });
     observerCBS.observe(target, observerConfig);
 }
