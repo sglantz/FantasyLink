@@ -16,7 +16,9 @@ Do you play fantasy baseball? Is your league site run on CBSSports.com or ESPN.c
 How does it work?
 ------
 
-FantasyGraph scans through your league's team clubhouse, free agency, and trade pages looking in specific places for player names. Whenever a player is found, the extension inserts a link to that player's profile on FanGraphs and/or Baseball Reference (you can adjust the sites in the extension's setting). You end up with a page that might look something like this: ![FantasyGraph Screenshot](http://i.imgur.com/fOAY0Wc.jpg "FantasyGraph Screenshot") Now looking up Mike Napoli's BABIP is as easy as clicking the little FanGraphs logo next to his name
+FantasyGraph scans through your league's team clubhouse, free agency, and trade pages looking in specific places for player names. Whenever a player is found, the extension inserts a link to that player's profile on FanGraphs and/or Baseball Reference (you can adjust the sites in the extension's setting). You end up with a page that might look something like this: ![FantasyGraph Screenshot](http://i.imgur.com/fOAY0Wc.jpg "FantasyGraph Screenshot") 
+
+Now looking up Mike Napoli's BABIP is as easy as clicking the little FanGraphs logo next to his name
 
 I'm sold, now how do I get it?
 ------
