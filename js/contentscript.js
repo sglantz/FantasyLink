@@ -34,7 +34,7 @@ function addSites() {
 }
 
 function addESPNLinks() {
-    $('.FantasyGraphLink').remove();
+    $('.FantasyLinkLink').remove();
     $('.playertablePlayerName').children(':first-child').each(function () {
         $(this).parent().append(getLinks($(this).text()));
     });
@@ -54,7 +54,7 @@ function addESPNEvents() {
 }
 
 function addCBSLinks() {
-    $('.FantasyGraphLink').remove();
+    $('.FantasyLinkLink').remove();
     $('a.playerLink').each(function () {
         if ($(this).parent().is('td')) {
             var splitIndex = $(this).text().indexOf(', ');
@@ -90,7 +90,7 @@ function getLinks(playerName) {
 }
 
 function getLinkHTML(playerName, playerProfileLink, favIconLink) {
-    return '<a class="FantasyGraphLink" href="' + playerProfileLink + playerName +
+    return '<a class="FantasyLinkLink" href="' + playerProfileLink + playerName +
         '" target="_blank"><img src="' + favIconLink + '" height="12" width="12" border="0"' +
         ' style="margin:0 6px 0 6px" title="' + playerName + '" /></a>';
 }
