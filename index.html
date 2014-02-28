@@ -1,71 +1,81 @@
 <!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>FantasyGraph by sglantz</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  </head>
-  <body>
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-      <header>
-        <h1>FantasyGraph</h1>
-        <p>Helping you over-analyze you fantasy baseball team since 2012.</p>
-      </header>
+  <title>FantasyLink</title>
+  <meta name="description" content="Helping you over-analyze you fantasy baseball team since 2012.">
 
-      <div id="banner">
-        <span id="logo"></span>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <a href="https://github.com/sglantz/FantasyGraph-Chrome-Extension" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/sglantz/FantasyGraph-Chrome-Extension/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/sglantz/FantasyGraph-Chrome-Extension/tarball/master" class="button">TAR</a></li>
-          </ul>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">FantasyLink</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Helping you over-analyze you fantasy baseball team since 2012.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/sglantz/FantasyLink/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/sglantz/FantasyLink/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/sglantz/FantasyLink" class="code">View FantasyLink on GitHub</a>
         </div>
-      </div><!-- end banner -->
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h3>
+<a name="what-is-fantasylink" class="anchor" href="#what-is-fantasylink"><span class="octicon octicon-link"></span></a>What is FantasyLink?</h3>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a name="what-is-fantasygraph" class="anchor" href="#what-is-fantasygraph"><span class="octicon octicon-link"></span></a>What is FantasyGraph?</h3>
-
-<p>FantasyGraph is a Chrome browser extension that integrates FanGraphs and Baseball Reference directly into your fantasy baseball league website.</p>
+<p>FantasyLink is a Chrome browser extension that integrates FanGraphs and Baseball Reference directly into your fantasy baseball league website.</p>
 
 <h3>
 <a name="do-i-need-it" class="anchor" href="#do-i-need-it"><span class="octicon octicon-link"></span></a>Do I need it?</h3>
 
-<p>Do you play fantasy baseball?  Is your league site run on CBSSports.com or ESPN.com?  Do you often find your self unimpressed with the stats that those sites provide you?  Do you think xFIP has more predictive value then ERA?  If you answered yes to these questions, you probably spend a little to much time switching back and forth between your league website and more in depth baseball sites like FanGraphs or Baseball Reference.  This extension is designed to cut down on that wasted time.</p>
+<p>Do you play fantasy baseball?  Is your league site run on CBSSports.com or ESPN.com?  Do you often find yourself unimpressed with the stats that those sites provide you?  Do you think xFIP has more predictive value then ERA?  If you answered yes to these questions, you probably spend a little to much time switching back and forth between your league website and more in depth baseball sites like FanGraphs or Baseball Reference.  This extension is designed to cut down on that wasted time.</p>
 
 <h3>
 <a name="how-does-it-work" class="anchor" href="#how-does-it-work"><span class="octicon octicon-link"></span></a>How does it work?</h3>
 
-<p>FantasyGraph scans through your league's team clubhouse, free agency, and trade pages looking for player names.  Whenever a player is found, the extension inserts a link to that player's profile on FanGraphs and/or Baseball Reference (you can adjust the sites in the extension's setting).  You end up with a page that looks something like this: <img src="http://i.imgur.com/fOAY0Wc.jpg" alt="FantasyGraph Screenshot"> Now looking up Mike Napoli's BABIP is as easy as clicking the little FanGraphs logo next to his name.</p>
+<p>FantasyLink scans through your league's team clubhouse, free agency, and trade pages looking for player names.  Whenever a player is found, the extension inserts a link to that player's profile on FanGraphs and/or Baseball Reference (you can adjust the sites in the extension's setting).  You end up with a page that looks something like this: <img src="http://i.imgur.com/fOAY0Wc.jpg" alt="FantasyLink Screenshot"> Now looking up Mike Napoli's BABIP is as easy as clicking the little FanGraphs logo next to his name.</p>
 
 <h3>
 <a name="im-sold-now-how-do-i-get-it" class="anchor" href="#im-sold-now-how-do-i-get-it"><span class="octicon octicon-link"></span></a>I'm sold, now how do I get it?</h3>
 
-<p>FantasyGraph is available in the <a href="https://chrome.google.com/webstore/detail/fantasygraph/pghfoglbgdeknkjcmilhkidfdkgenfdi">Chrome Web Store</a>.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/sglantz">sglantz</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
+<p>FantasyLink is available in the <a href="https://chrome.google.com/webstore/detail/fantasylink/pghfoglbgdeknkjcmilhkidfdkgenfdi">Chrome Web Store</a>.</p>
+        </article>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/sglantz" class="avatar"><img src="https://avatars.githubusercontent.com/u/319135" width="48" height="48"/></a> <a href="https://github.com/sglantz">sglantz</a> maintains <a href="https://github.com/sglantz/FantasyLink">FantasyLink</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/sglantz/FantasyLink/tarball/master" class="tar">tar</a><a href="https://github.com/sglantz/FantasyLink/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -76,5 +86,5 @@
             } catch(err) {}
           </script>
 
-  </body>
+</body>
 </html>
