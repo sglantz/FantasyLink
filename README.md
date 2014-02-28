@@ -11,7 +11,7 @@ FantasyLink is a Chrome browser extension that integrates FanGraphs and Baseball
 Do I need it?
 ------
 
-Do you play fantasy baseball? Is your league site run on CBSSports.com or ESPN.com? Do you often find your self unimpressed with the stats that those sites provide you? Do you think xFIP has more predictive value then ERA? If you answered yes to these questions, you probably spend a little to much time switching back and forth between your league website and more in depth baseball sites like FanGraphs or Baseball Reference. This extension is designed to cut down on that wasted time.
+Do you play fantasy baseball? Is your league site run on CBSSports.com or ESPN.com? Do you often find yourself unimpressed with the stats that those sites provide you? Do you think xFIP has more predictive value then ERA? If you answered yes to these questions, you probably spend a little to much time switching back and forth between your league website and more in depth baseball sites like FanGraphs or Baseball Reference. This extension is designed to cut down on that wasted time.
 
 How does it work?
 ------
@@ -23,4 +23,4 @@ Now looking up Mike Napoli's BABIP is as easy as clicking the little FanGraphs l
 I'm sold, now how do I get it?
 ------
 
-FantasyLink is available for download in the [Chrome Web Store](https://chrome.google.com/webstore/detail/fantasygraph/pghfoglbgdeknkjcmilhkidfdkgenfdi?hl=en-US).  If you know javascript and want to tinker with the extension's code, you can fork the project on [Github](https://github.com/sglantz/FantasyGraph-Chrome-Extension).
+FantasyLink is available for download in the [Chrome Web Store](https://chrome.google.com/webstore/detail/fantasylink/pghfoglbgdeknkjcmilhkidfdkgenfdi).  If you know javascript and want to tinker with the extension's code, you can fork the project on [Github](https://github.com/sglantz/FantasyGraph-Chrome-Extension).
