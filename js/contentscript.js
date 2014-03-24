@@ -83,7 +83,7 @@ function addCBSEvents() {
 
 function addYahooLinks() {
     $('.FantasyLinkLink').remove();
-    $('a.name').each(function () {
+    $('.ysf-player-name a').each(function () {
         $(this).parent().append(getLinks($(this).text()));
     });
 }
