@@ -55,7 +55,8 @@
 <h3>
 <a name="im-sold-now-how-do-i-get-it" class="anchor" href="#im-sold-now-how-do-i-get-it"><span class="octicon octicon-link"></span></a>I'm sold, now how do I get it?</h3>
 
-<p>FantasyLink is available in the <a href="https://chrome.google.com/webstore/detail/fantasylink/pghfoglbgdeknkjcmilhkidfdkgenfdi">Chrome Web Store</a>.</p>
+<p>FantasyLink is available in the <a href="https://chrome.google.com/webstore/detail/fantasylink/pghfoglbgdeknkjcmilhkidfdkgenfdi">Chrome Web Store</a> or click 
+          <a href="#" onclick="chrome.webstore.install(); return false;" id="install-button">Add to Chrome</a> to install the extension.</p>
         </article>
       </div>
     </div>
@@ -71,9 +72,6 @@
     </footer>
   </div>	  
   <script type="text/javascript">
-	if (chrome.app.isInstalled) {
-		document.getElementById('install-button').innerHTML = "<span>Already Installed!</span>";
-	}
   
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-29318842-2']);
