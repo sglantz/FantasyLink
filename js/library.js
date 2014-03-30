@@ -4,6 +4,7 @@
     baseballreference: true,
     cbs: true,
     espn: true,
+    yahoo: true,
     toolbar: false
 };
 

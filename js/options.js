@@ -1,4 +1,4 @@
-var possibleOptions = ['enabled', 'fangraphs', 'baseballreference', 'espn', 'cbs', 'toolbar'];
+var possibleOptions = ['enabled', 'fangraphs', 'baseballreference', 'espn', 'cbs', 'yahoo', 'toolbar'];
 var options;
 
 function saveOptions() {

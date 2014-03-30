@@ -30,6 +30,9 @@ function addSites() {
     } else if (options.cbs && document.URL.indexOf("cbssports") != -1) {
         addCBSLinks();
         addCBSEvents();
+    } else if (options.yahoo && document.URL.indexOf("yahoo") != -1) {
+        addYahooLinks();
+        addYahooEvents();
     }
 }
 
@@ -76,6 +79,26 @@ function addCBSEvents() {
         observerCBS.observe(target, observerConfig);
     });
     observerCBS.observe(target, observerConfig);
+}
+
+function addYahooLinks() {
+    $('.FantasyLinkLink').remove();
+    $('.ysf-player-name a').each(function () {
+        $(this).parent().append(getLinks($(this).text()));
+    });
+}
+
+function addYahooEvents() {
+    var target = document.querySelector('#yspmaincontent');
+
+    var observerYahoo = new MutationObserver(function (mutations) {
+        observerYahoo.disconnect();
+        if (mutations.length > 0) {
+            addYahooLinks();
+        }
+        observerYahoo.observe(target, observerConfig);
+    });
+    observerYahoo.observe(target, observerConfig);
 }
 
 function getLinks(playerName) {
