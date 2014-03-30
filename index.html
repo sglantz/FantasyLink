@@ -6,11 +6,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/pghfoglbgdeknkjcmilhkidfdkgenfdi">
   <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
   <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <link rel="shortcut icon" href="favicon.ico" />
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
-
   <title>FantasyLink</title>
   <meta name="description" content="Helping you over-analyze you fantasy baseball team since 2012.">
 
@@ -29,8 +30,8 @@
       <div id="main" role="main">
         <div class="download-bar">
         <div class="inner">
-          <a href="https://github.com/sglantz/FantasyLink/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/sglantz/FantasyLink/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="#" onclick="chrome.webstore.install(); return false;" class="download-button" id="install-button"><span>Add to Chrome</span></a>
+          <a href="https://github.com/sglantz/FantasyLink/zipball/master" class="download-button"><span>Download Zip</span></a>
           <a href="https://github.com/sglantz/FantasyLink" class="code">View FantasyLink on GitHub</a>
         </div>
         <span class="blc"></span><span class="trc"></span>
@@ -44,7 +45,7 @@
 <h3>
 <a name="do-i-need-it" class="anchor" href="#do-i-need-it"><span class="octicon octicon-link"></span></a>Do I need it?</h3>
 
-<p>Do you play fantasy baseball?  Is your league site run on CBSSports.com or ESPN.com?  Do you often find yourself unimpressed with the stats that those sites provide you?  Do you think xFIP has more predictive value then ERA?  If you answered yes to these questions, you probably spend a little to much time switching back and forth between your league website and more in depth baseball sites like FanGraphs or Baseball Reference.  This extension is designed to cut down on that wasted time.</p>
+<p>Do you play fantasy baseball?  Is your league site run on CBSSports.com, ESPN.com, or Yahoo.com?  Do you often find yourself unimpressed with the stats that those sites provide you?  Do you think xFIP has more predictive value then ERA?  If you answered yes to these questions, you probably spend a little to much time switching back and forth between your league website and more in depth baseball sites like FanGraphs or Baseball Reference.  This extension is designed to cut down on that wasted time.</p>
 
 <h3>
 <a name="how-does-it-work" class="anchor" href="#how-does-it-work"><span class="octicon octicon-link"></span></a>How does it work?</h3>
@@ -68,24 +69,24 @@
         <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
       </div>
     </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/sglantz/FantasyLink/tarball/master" class="tar">tar</a><a href="https://github.com/sglantz/FantasyLink/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>		  
-		  <script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-29318842-2']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+  </div>	  
+  <script type="text/javascript">
+	if (chrome.app.isInstalled) {
+		document.getElementById('install-button').innerHTML = "<span>Already Installed!</span>";
+	}
+  
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-29318842-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
 
-			ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		  </script>
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();		
+	
+  </script>
 
 </body>
 </html>
