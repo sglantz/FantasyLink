@@ -103,11 +103,12 @@ function addYahooEvents() {
 
 function getLinks(playerName) {
     var returnString = '';
+	var googleFavIconUrl = 'http://www.google.com/s2/favicons?domain=';
     if (options.fangraphs) {
-        returnString += getLinkHTML(playerName, 'http://www.fangraphs.com/players.aspx?lastname=', 'http://www.fangraphs.com/favicon.ico');
+        returnString += getLinkHTML(playerName, 'http://www.fangraphs.com/players.aspx?lastname=', googleFavIconUrl + 'http://www.fangraphs.com');
     }
     if (options.baseballreference) {
-        returnString += getLinkHTML(playerName, 'http://www.baseball-reference.com/pl/player_search.cgi?search=', 'http://www.baseball-reference.com/favicon.ico');
+        returnString += getLinkHTML(playerName, 'http://www.baseball-reference.com/pl/player_search.cgi?search=', googleFavIconUrl + 'http://www.baseball-reference.com');
     }
     return returnString;
 }
