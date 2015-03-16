@@ -62,14 +62,14 @@ function addCBSLinks() {
         if ($(this).parent().is('td')) {
             var splitIndex = $(this).text().indexOf(', ');
             var originalName = $(this).text();
-            $(this).parent().append(getLinks(originalName.substring(splitIndex + 2, originalName.length) + ' ' +
+            $(this).parent().append(getLinks(originalName.substring(splitIndex + 1, originalName.length) + ' ' +
                 originalName.substring(0, splitIndex)));
         }
     });
 }
 
 function addCBSEvents() {
-    var target = document.querySelector('#pageContainer');
+    var target = document.querySelector('#sortableStats') || document.querySelector('#lineup_views');
 
     var observerCBS = new MutationObserver(function (mutations) {
         observerCBS.disconnect();
@@ -110,6 +110,9 @@ function getLinks(playerName) {
     if (options.baseballreference) {
         returnString += getLinkHTML(playerName, 'http://www.baseball-reference.com/pl/player_search.cgi?search=', googleFavIconUrl + 'http://www.baseball-reference.com');
     }
+	if(options.razzball) {		
+        returnString += getLinkHTML(playerName, 'http://razzball.com/player/', googleFavIconUrl + 'http://razzball.com/');
+	}
     return returnString;
 }
 

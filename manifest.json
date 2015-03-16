@@ -2,8 +2,8 @@
   "manifest_version": 2,
   "name": "FantasyLink",
   "short_name": "FantasyLink",
-  "version": "2.1.2",
-  "description": "Adds FanGraphs and Baseball Reference integration into the ESPN, CBSSports, and Yahoo fantasy baseball websites.",
+  "version": "2.2.0",
+  "description": "Adds FanGraphs, Baseball Reference, and Razzball integration into the ESPN, CBSSports, and Yahoo fantasy baseball websites.",
   "permissions": [ "storage", "tabs", "http://games.espn.go.com/flb/*", "http://*.baseball.cbssports.com/*", "http://baseball.fantasysports.yahoo.com/*"],
   "icons": {
     "16": "img/icon16.png",

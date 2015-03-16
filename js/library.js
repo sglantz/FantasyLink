@@ -2,10 +2,11 @@
     enabled: true,
     fangraphs: true,
     baseballreference: true,
+    razzball: true,
     cbs: true,
     espn: true,
     yahoo: true,
-    toolbar: false
+    toolbar: true
 };
 
 function getOptions(func) {
