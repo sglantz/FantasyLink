@@ -14,7 +14,7 @@
     {
       "matches": ["http://games.espn.go.com/flb/clubhouse*", "http://games.espn.go.com/flb/freeagency*", "http://games.espn.go.com/flb/trade*", 
         "http://*.baseball.cbssports.com/teams*", "http://*.baseball.cbssports.com/stats/stats-main*", "http://*.baseball.cbssports.com/transactions/trade*",
-        "http://baseball.fantasysports.yahoo.com/*"],
+        "http://baseball.fantasysports.yahoo.com/*", "https://baseball.fantasysports.yahoo.com/*"],
       "js" : ["js/jquery.min.js", "js/library.js", "js/contentscript.js"]
     }
   ],
