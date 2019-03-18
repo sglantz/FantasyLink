@@ -3,6 +3,8 @@
     fangraphs: true,
     baseballreference: true,
     razzball: true,
+    savant: true,
+    bp: true,
     cbs: true,
     espn: true,
     yahoo: true,

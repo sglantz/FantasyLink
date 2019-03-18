@@ -2,9 +2,9 @@
   "manifest_version": 2,
   "name": "FantasyLink",
   "short_name": "FantasyLink",
-  "version": "2.2.2",
-  "description": "Adds FanGraphs, Baseball Reference, and Razzball integration into the ESPN, CBSSports, and Yahoo fantasy baseball websites.",
-  "permissions": [ "storage", "tabs", "*://games.espn.go.com/flb/*", "*://*.baseball.cbssports.com/*", "*://baseball.fantasysports.yahoo.com/*", "*://games.espn.com/flb/*"],
+  "version": "2.3.0",
+  "description": "Adds FanGraphs, Baseball Reference, Razzball, Baseball Prospectus, and Baseball Savant integration into the ESPN, CBSSports, and Yahoo fantasy baseball websites.",
+  "permissions": [ "storage", "tabs", "*://fantasy.espn.com/baseball/*", "*://*.baseball.cbssports.com/*", "*://baseball.fantasysports.yahoo.com/*"],
   "icons": {
     "16": "img/icon16.png",
     "46": "img/icon48.png",
@@ -12,8 +12,8 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://games.espn.go.com/flb/clubhouse*", "*://games.espn.go.com/flb/freeagency*", "*://games.espn.go.com/flb/trade*", 
-      "http://games.espn.com/flb/clubhouse*", "http://games.espn.com/flb/freeagency*", "http://games.espn.com/flb/trade*", "http://games.espn.com/flb/watchlist*", "http://games.espn.com/flb/playerrater*", "http://games.espn.com/flb/leaders*", "http://games.espn.com/flb/*",
+      "matches": [
+        "*://fantasy.espn.com/baseball/team*", "*://fantasy.espn.com/baseball/players*",  
         "*://*.baseball.cbssports.com/teams*", "*://*.baseball.cbssports.com/stats/stats-main*", "*://*.baseball.cbssports.com/transactions/trade*",
         "*://baseball.fantasysports.yahoo.com/*"],
       "js" : ["js/jquery.min.js", "js/library.js", "js/contentscript.js"]
@@ -31,3 +31,4 @@
   },
   "options_page": "html/options.html"
 }
+      

@@ -5,7 +5,11 @@
 </head>
 <body>
     <header>
-        <img src="/img/icon48.png" height="48" width="48" alt="FantasyLink Icon" /><h1>FantasyLink extension options</h1>
+        <img src="/img/icon48.png" height="48" width="48" alt="FantasyLink Icon" /><h1>FantasyLink</h1>
+        <h3>Helping you over-analyze you fantasy baseball team since 2012.</h3>
+        <span>Thanks for using FantasyLink.  You can report any issues or feedback about this extension on <a href="https://github.com/sglantz/FantasyLink/issues">GitHub</a>.</span>
+        <br/>
+        <h2>Extension options</h2>
     </header>
     <div class="content">
         <section>
@@ -31,11 +35,17 @@
             <div class="inputContainer">
                 <input type="checkbox" name="razzball" value="yes">Razzball
             </div>
+            <div class="inputContainer">
+                <input type="checkbox" name="savant" value="yes">Baseball Savant (beta)<sup>1</sup>
+            </div>
+            <div class="inputContainer">
+                <input type="checkbox" name="bp" value="yes">Baseball Prospectus (beta)<sup>2</sup>
+            </div>
         </section>
         <section>
             <h3>Add profile links to the following sites:</h3>
             <div class="inputContainer">
-                <input type="checkbox" name="espn" value="yes">ESPN
+                <input type="checkbox" name="espn" value="yes">ESPN (beta)<sup>3</sup>
             </div>
             <div class="inputContainer">
                 <input type="checkbox" name="cbs" value="yes">CBS
@@ -46,6 +56,16 @@
         </section>
         <br>
         <button id="save">Save</button><span id="status">Your selected options have been saved!</span>
+    </div>
+    <div id="disclaimer">
+        <h3>Disclaimer:</h3>
+        <span><b>The below features are all still in beta.  They mostly work, but I am just listing the details here to say I know these issues exist and I want to fix them.</b></span>
+        <br/> <br/>        
+        <span><b><sup>1</sup></b> - Baseball Savant integration eis currently in beta because the site does not offer any native search functionality for player pages.  The functionality mostly works, but it is apparently subject to rate limiting if you open up to many tabs at once.</span>
+        <br/>
+        <span><b><sup>2</sup></b> - Baseball Prospectus integration is currently in beta because the site's native search does not automatically redirect when only one result is returned.  The user is required to make a second click on the search page to pull up a the player's page.</span>
+        <br/>
+        <span><b><sup>3</sup></b> - ESPN integration is currently in beta because I have yet to find a reliable page event to ensure that the extension is always triggered.  This means the links occasionally disappear and a page refresh is required to get them back.</span>
     </div>
 </body>
 <script src="/js/jquery.min.js"></script>

@@ -38,13 +38,13 @@ function addSites() {
 
 function addESPNLinks() {
     $('.FantasyLinkLink').remove();
-    $('.playertablePlayerName').children(':first-child').each(function () {
-        $(this).parent().append(getLinks($(this).text()));
+    $('.player-column__athlete').each(function() {
+        $(this).append(getLinks($(this).attr('title')));
     });
 }
 
 function addESPNEvents() {
-    var target = document.querySelector('.playerTableContainerDiv');
+    var target = document.querySelector('.players-table__sortable') || document.querySelector('.players-table') || document.querySelector('.Table2__table');
 
     var observerESPN = new MutationObserver(function (mutations) {
         observerESPN.disconnect();
@@ -105,13 +105,19 @@ function getLinks(playerName) {
     var returnString = '';
 	var googleFavIconUrl = 'http://www.google.com/s2/favicons?domain=';
     if (options.fangraphs) {
-        returnString += getLinkHTML(playerName, 'http://www.fangraphs.com/players.aspx?lastname=', googleFavIconUrl + 'http://www.fangraphs.com');
+        returnString += getLinkHTML(playerName, 'https://www.fangraphs.com/players.aspx?lastname=', googleFavIconUrl + 'https://www.fangraphs.com');
     }
     if (options.baseballreference) {
-        returnString += getLinkHTML(playerName, 'http://www.baseball-reference.com/pl/player_search.cgi?search=', googleFavIconUrl + 'http://www.baseball-reference.com');
+        returnString += getLinkHTML(playerName, 'https://www.baseball-reference.com/pl/player_search.cgi?search=', googleFavIconUrl + 'https://www.baseball-reference.com');
     }
 	if(options.razzball) {		
-        returnString += getLinkHTML(playerName, 'http://razzball.com/player/', googleFavIconUrl + 'http://razzball.com/');
+        returnString += getLinkHTML(playerName, 'https://razzball.com/player/', googleFavIconUrl + 'https://razzball.com/');
+	}
+	if(options.savant) {		
+        returnString += getLinkHTML(playerName, 'https://duckduckgo.com/?q=!ducky site:baseballsavant.mlb.com ', googleFavIconUrl + 'https://baseballsavant.mlb.com');
+	}
+	if(options.bp) {		
+        returnString += getLinkHTML(playerName, 'https://www.baseballprospectus.com/full-player-search/?player=', googleFavIconUrl + 'https://www.baseballprospectus.com/');
 	}
     return returnString;
 }

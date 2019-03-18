@@ -22,3 +22,9 @@ chrome.extension.onRequest.addListener(function (request, sender) {
         });
     }
 });
+
+chrome.runtime.onInstalled.addListener(function (object) {
+    chrome.tabs.create({url: "html/options.html"}, function (tab) {
+        options.installDate = new Date();
+    });
+});
