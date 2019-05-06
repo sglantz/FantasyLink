@@ -2,8 +2,8 @@
   "manifest_version": 2,
   "name": "FantasyLink",
   "short_name": "FantasyLink",
-  "version": "2.3.0",
-  "description": "Adds FanGraphs, Baseball Reference, Razzball, Baseball Prospectus, and Baseball Savant integration into the ESPN, CBSSports, and Yahoo fantasy baseball websites.",
+  "version": "2.3.1",
+  "description": "Adds FanGraphs, Baseball Reference, Razzball, Baseball Prospectus, & Baseball Savant integration into you fantasy baseball website.",
   "permissions": [ "storage", "tabs", "*://fantasy.espn.com/baseball/*", "*://*.baseball.cbssports.com/*", "*://baseball.fantasysports.yahoo.com/*"],
   "icons": {
     "16": "img/icon16.png",
@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://fantasy.espn.com/baseball/team*", "*://fantasy.espn.com/baseball/players*",  
+        "*://fantasy.espn.com/baseball/team*", "*://fantasy.espn.com/baseball/players*", "*://fantasy.espn.com/baseball/watchlist*",  
         "*://*.baseball.cbssports.com/teams*", "*://*.baseball.cbssports.com/stats/stats-main*", "*://*.baseball.cbssports.com/transactions/trade*",
         "*://baseball.fantasysports.yahoo.com/*"],
       "js" : ["js/jquery.min.js", "js/library.js", "js/contentscript.js"]

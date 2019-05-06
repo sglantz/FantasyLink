@@ -44,16 +44,14 @@ function addESPNLinks() {
 }
 
 function addESPNEvents() {
-    var target = document.querySelector('.players-table__sortable') || document.querySelector('.players-table') || document.querySelector('.Table2__table');
-
     var observerESPN = new MutationObserver(function (mutations) {
         observerESPN.disconnect();
-        if (mutations.length > 0) {
+        if (mutations.length > 0 && $('.player-column__athlete').length > 0) {
             addESPNLinks();
         }
-        observerESPN.observe(target, observerConfig);
+        observerESPN.observe(document.body, observerConfig);
     });
-    observerESPN.observe(target, observerConfig);
+    observerESPN.observe(document.body, observerConfig);
 }
 
 function addCBSLinks() {
