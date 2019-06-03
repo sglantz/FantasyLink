@@ -115,7 +115,10 @@ function getLinks(playerName) {
         returnString += getLinkHTML(playerName, 'https://duckduckgo.com/?q=!ducky site:baseballsavant.mlb.com ', googleFavIconUrl + 'https://baseballsavant.mlb.com');
 	}
 	if(options.bp) {		
-        returnString += getLinkHTML(playerName, 'https://www.baseballprospectus.com/full-player-search/?player=', googleFavIconUrl + 'https://www.baseballprospectus.com/');
+        returnString += getLinkHTML(playerName, 'https://legacy.baseballprospectus.com/player_search.php?search_name=', googleFavIconUrl + 'https://www.baseballprospectus.com/');
+	}
+	if(options.theater) {		
+        returnString += getLinkHTML(playerName, 'https://baseball.theater/Search/', googleFavIconUrl + 'https://baseball.theater/Search/');
 	}
     return returnString;
 }

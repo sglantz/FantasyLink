@@ -6,7 +6,7 @@ Helping you over-analyze you fantasy baseball team since 2012.
 What is FantasyLink?
 ------
 
-FantasyLink is a Chrome browser extension that integrates FanGraphs, Baseball Reference, Razzball, Baseball Savant, and Baseball Prospectus directly into your fantasy baseball league website.
+FantasyLink is a Chrome browser extension that integrates FanGraphs, Baseball Reference, Razzball, Baseball Prospectus, Baseball Savant, & Baseball Theater directly into your fantasy baseball league website.
 
 Do I need it?
 ------
